@@ -1,0 +1,9 @@
+.component-box {
+  margin: 0.25rem;
+  padding: 2rem;
+  border: 4px dashed #666;
+}
+
+.jumbotron {
+  padding-bottom: 2rem;
+}

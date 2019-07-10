@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+      crossorigin="anonymous"
+    />
+    <link href="../index.css" rel="stylesheet" />
+    <title>Build a Collapse Component</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="jumbotron">
+        <h1>Build a Collapse Component</h1>
+
+        <section>
+          <b>INSTRUCTIONS:</b>
+          <br />
+          Implement behavior based on your observations
+          <a
+            href="https://getbootstrap.com/docs/4.3/components/collapse/#example"
+            target="_blank"
+            >of the example here.</a
+          >
+          <br />
+
+          Make your changes to the JavaScript file `/collapse/index.js`!
+        </section>
+
+        <section>
+          <b>HINTS:</b>
+          <ul>
+            <li>
+              Review the `/collapse/index.html` file to get an idea of the
+              example HTML.
+            </li>
+            <li>
+              There may be 'hidden' HTML. Use DevTools &quot;Inspect&quot; to
+              see how the Bootstrap example's changes classes as you interact
+              with it.
+            </li>
+            <li>
+              If your console log is clearing too fast, try opening this page in
+              a new tab/window.
+            </li>
+            <li>
+              Start small. Pick the first task.
+              <i
+                >Ensure your DOM `querySelector` finds the correct element
+                passed into a class.</i
+              >
+            </li>
+            <li>
+              Make a plan, timebox, apply, iterate, break, repeat!
+            </li>
+          </ul>
+          <br />
+
+          <b>Component is included below in the dashed box.</b>
+        </section>
+      </header>
+
+      <section class="component-box">
+        <p>
+          <a
+            class="btn btn-success"
+            data-toggle="collapse"
+            href="#secretKitten"
+            role="button"
+            aria-expanded="false"
+            aria-controls="secretKitten"
+          >
+            Show (Not-So-Secret) Secret
+          </a>
+        </p>
+        <div class="collapse" id="secretKitten">
+          <div class="card card-body">
+            <h4>Kitten!</h4>
+            <img
+              src="//adorbs-as-a-service.herokuapp.com/api/v1/720w/520h/"
+              alt="Rosie, Dans Kitty"
+            />
+            <br />
+            <a
+              href="https://github.com/justsml/adorbs-as-a-service"
+              target="_blank"
+              >View adorbs-as-a-service</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
